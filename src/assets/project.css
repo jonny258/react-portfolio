@@ -1,0 +1,54 @@
+.project {
+    margin-top: 125px;
+    background-color: lightgray;
+    width: fit-content;
+}
+
+.project-text {
+    padding: 5px;
+    max-width: 600px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.project-tech-chal div{
+    width: 50%;
+}
+
+.project-tech{
+    border-right: 2px solid black;
+    padding-right: 10px;
+}
+
+.project-chal{
+    padding-left: 10px;
+}
+
+.project-sum{
+    border-top: 2px solid black; margin: 5px;
+}
+
+.project-text h3 {
+    margin-top: 10px;
+    font-size: 150%;
+}
+
+.project-text a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.project-text a:hover {
+    text-decoration: underline;
+}
+
+.project-titles{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project img {
+    max-width: 600px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

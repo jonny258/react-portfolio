@@ -37,11 +37,10 @@ function Header({ setAboutMeState, setPortfolioState, setContactState}) {
             Contact
           </a>
         </h3>
-        {/* Fix that this is not avaliable on the site because it should be */}
         <h3>
           <a
             className="btn"
-            href="../public/Standard RESUME - Jonathan Olsen.pdf"
+            href="/Standard RESUME - Jonathan Olsen.pdf"
             download
           >
             Resume
