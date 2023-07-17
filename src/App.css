@@ -49,8 +49,20 @@
     height: 60px;
     color: white;
     background-color: #282c34;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   
+  .footer a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+  }
+
+  .footer a:hover{
+    text-decoration: underline;
+  }
 
 /* About me */
 
@@ -215,4 +227,31 @@
 
 .contact-form textarea {
   height: 315px;
+}
+
+
+.resume-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.resume-section div{
+  margin: 30px;
+}
+
+.profish{
+  text-align: center;
+  display: flex;
+  border-radius: 5px;
+  border: 3px lightgray solid;
+  padding: 10px;
+}
+
+.profish ul{
+
+  list-style-type: none;
 }

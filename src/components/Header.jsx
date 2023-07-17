@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Header({ setAboutMeState, setPortfolioState, setContactState}) {
+function Header({ setAboutMeState, setPortfolioState, setContactState, setResumeState}) {
   return (
     <section className="nav-header-custom nav-dark w-100">
       <div className="mx-3 w-50 d-flex flex-wrap text-white justify-content-between">
@@ -15,6 +15,8 @@ function Header({ setAboutMeState, setPortfolioState, setContactState}) {
             setAboutMeState(true)
             setPortfolioState(false)
             setContactState(false)
+            setResumeState(false)
+            
           }}>
             About Me
           </a>
@@ -24,6 +26,7 @@ function Header({ setAboutMeState, setPortfolioState, setContactState}) {
             setAboutMeState(false)
             setPortfolioState(true)
             setContactState(false)
+            setResumeState(false)
           }}>
             Portfolio
           </a>
@@ -33,16 +36,18 @@ function Header({ setAboutMeState, setPortfolioState, setContactState}) {
             setAboutMeState(false)
             setPortfolioState(false)
             setContactState(true)
+            setResumeState(false)
           }}>
             Contact
           </a>
         </h3>
         <h3>
-          <a
-            className="btn"
-            href="/Standard RESUME - Jonathan Olsen.pdf"
-            download
-          >
+          <a className="btn" onClick={()=> {
+            setAboutMeState(false)
+            setPortfolioState(false)
+            setContactState(false)
+            setResumeState(true)
+          }}>
             Resume
           </a>
         </h3>
