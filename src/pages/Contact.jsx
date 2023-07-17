@@ -1,6 +1,23 @@
 import React from "react";
 
 function Contact() {
+
+  const handleMouseLeave = (event) => {
+    if(!event.target.value){
+      alert('Please fillout this field')
+      return false
+    }else{
+      return true
+    }
+  }
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailRegex.test(email)){
+      alert('this is not a valid email')
+    }
+  };
+  
   return (
     <section className="contact-wrapper">
       <div className="contact-box">
@@ -38,6 +55,7 @@ function Contact() {
               className="form-control"
               placeholder="Name"
               aria-label="Name"
+              onMouseLeave={(event)=> handleMouseLeave(event)}
             />
             <span className="input-group-text">@</span>
             <input
@@ -45,6 +63,13 @@ function Contact() {
               className="form-control"
               placeholder="Email"
               aria-label="Email"
+              onMouseLeave={(event)=> {
+                const isText = handleMouseLeave(event)
+                if(isText){
+                  validateEmail(event.target.value)
+                }
+
+              }}
             />
           </div>
           <div className="input-group mb-3">
@@ -57,11 +82,12 @@ function Contact() {
               placeholder="Subject"
               aria-label="Subject"
               aria-describedby="basic-addon1"
+              onMouseLeave={(event)=> handleMouseLeave(event)}
             />
           </div>
           <div className="input-group">
             <span className="input-group-text">Message</span>
-            <textarea className="form-control" aria-label="Message"></textarea>
+            <textarea className="form-control" aria-label="Message" onMouseLeave={(event)=> handleMouseLeave(event)}></textarea>
           </div>
         </div>
       </div>

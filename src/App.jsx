@@ -11,7 +11,7 @@ function App() {
   const [aboutMeState, setAboutMeState] = useState(true);
   const [portfolioState, setPortfolioState] = useState(false);
   const [contactState, setContactState] = useState(false);
-  const [resumeState, setResumeState] = useState(false)
+  const [resumeState, setResumeState] = useState(false);
 
   return (
     <div className="App">
@@ -20,11 +20,15 @@ function App() {
         setPortfolioState={setPortfolioState}
         setContactState={setContactState}
         setResumeState={setResumeState}
+        resumeState={resumeState}
+        contactState={contactState}
+        portfolioState={portfolioState}
+        aboutMeState={aboutMeState}
       />
       {aboutMeState && <AboutMe />}
       {portfolioState && <Portfolio />}
       {contactState && <Contact />}
-{resumeState && <Resume />}
+      {resumeState && <Resume />}
       <Footer />
     </div>
   );
