@@ -1,71 +1,101 @@
-# Getting Started with Create React App
+# React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+React Portfolio is a web-based portfolio application for developers. This is a React single-page application that provides a showcase of the developer's projects, skills, experiences, and ways to connect.
 
-In the project directory, you can run:
+This portfolio provides potential employers a glimpse into what the developer has accomplished, and the application helps set the developer apart by using the latest technologies, in this case, React. The project is hosted and deployed on GitHub Pages.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## User Story
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+As an employer looking for candidates with experience building single-page applications, you'll be able to view a potential employee's deployed React portfolio of work samples, assessing whether they're a good candidate for an open position.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acceptance Criteria
 
-### `npm run build`
+Here are the key features that you can use on this portfolio:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Navigation** - You can navigate to different sections of the portfolio, including 'About Me', 'Portfolio', 'Contact', and 'Resume'. The corresponding section is highlighted on the navigation bar.
+   
+2. **About Me** - This section contains a recent photo or avatar of the developer and a short bio about them.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Portfolio** - This section showcases titled images of six of the developer's applications, with links to the deployed applications and the corresponding GitHub repository.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Contact** - This section contains a contact form with fields for a name, an email address, and a message. It provides notifications on incomplete or incorrect entries.
 
-### `npm run eject`
+5. **Resume** - This section provides a link to a downloadable resume and a list of the developer's proficiencies.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+6. **Footer** - The footer contains text or icon links to the developer's GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If you wish to set up a similar portfolio or want to contribute, here's how you can do it:
 
-## Learn More
+1. Clone the repo: `git clone https://github.com/jonny258/react-portfolio.git`
+2. Install NPM packages: `npm install`
+3. Start the application: `npm start`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Structure
 
-### Code Splitting
+The portfolio is structured into several components including:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Header: Appears on multiple pages.
+- Navigation: Used to conditionally render the different sections of the portfolio.
+- Project: Used multiple times in the Portfolio section to represent each project.
+- Footer: Appears on multiple pages.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Projects
 
-### Making a Progressive Web App
+Each project in the portfolio includes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- An image of the deployed application.
+- The title of the project.
+- A link to the deployed application.
+- A link to the corresponding GitHub repository.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Design
 
-### Deployment
+The design of the portfolio is made keeping user accessibility and user experience in mind, utilizing a mobile-first design approach. It also uses a unique color palette and suitable font size to enhance readability. There is a consistent theme and design across all the sections.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Contribute
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react-portfolio
+Any contributions you make are greatly appreciated. Follow the instructions below to contribute:
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/YourFeature`)
+3. Commit your Changes (`git commit -m 'Add some YourFeature'`)
+4. Push to the Branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+
+---
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+Project Link: [https://jonny258.github.io/react-portfolio/](https://jonny258.github.io/react-portfolio/)
+
+---
+
+## Acknowledgements
+
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Create React App](https://create-react-app.dev/)
+
+---
